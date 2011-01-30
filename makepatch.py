@@ -40,7 +40,6 @@ if __name__ == '__main__':
 	#print sys.argv[1]
 	try:
 		opts, args = getopt.getopt(sys.argv[1:],'o:n:p:')
-		#print opts, args
 	except getopt.GetoptError:
 		print "usage - python makepatch.py -o oldfile -n newfile -p patchfilename"
 		exit()
