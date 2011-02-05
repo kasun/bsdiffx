@@ -1,4 +1,4 @@
-Module to create, save and apply patches between versions of a file
+Extension module of bsdiff to create, save and apply patches between versions of a file
 -----------------------------------------------------------------------------
 
 REQUIREMENTS
