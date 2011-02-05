@@ -2,6 +2,7 @@ import cPickle
 import bsdiff
 
 def makePatch(oldfilename, newfilename, patchfilename='patch'):
+	''' given oldfilename and newfilename produces a diff and write it to the optional patchfilename'''
 	if oldfilename is None or newfilename is None:
 		raise BSDiffXException('Invalid oldfile or newfile')	
 	try:
@@ -33,6 +34,7 @@ def makePatch(oldfilename, newfilename, patchfilename='patch'):
 	patchfile.close()
 
 def applyPatch(oldfilename, patchfilename, resultfilename='result'):
+	''' given oldfilename and patchfilename with the current diff produces the new file name with the optional resultfilename'''
 	if oldfilename is None or patchfilename is None:
 		raise BSDiffXException('oldfilename or pathcfilename not defined')
 	try:
