@@ -1,7 +1,17 @@
+Module to create, save and apply patches between versions of a file
+-----------------------------------------------------------------------------
+
 REQUIREMENTS
 
 python bsdiff extension
+--------------------------------------
 
-How to Use
+HOW TO USE
+
+bsdiffx.makePatch('old','new','patch')
+given two versions of a file, 'old' and 'new' create the diff between two files and saves the diff to the file 'patch'
+
+bsdiffx.applyPatch('old','patch','result')
+given a file 'old' and a patch file 'patch' applies the patch to the 'old' file and produces the file 'result'
 
 
